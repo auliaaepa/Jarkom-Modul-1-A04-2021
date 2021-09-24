@@ -54,6 +54,35 @@ Urutan ke 8 : Coklat NC (tidak dipakai)
 ### Soal 5
 5.Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 #### Penjelasan
+Untuk mendapatkan pasword dan username yang didapat dari query insert  pada table users yaitu dengan cara memasukan kode ```mysql.command ==3 and frame matches "select"```
+pada filter wireshark sehingga akan muncul tampilan paket sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/5a.png)
+
+Setelah di dapatkan 4 paket maka pilih paket paling atas lalu ```klik kiri``` -> ```Follow``` -> ```TCP Stream```. Maka akan muncul berupa query sql select dengan username dan 
+password sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/5b.png)
+
+Didapatkan : 
+```
+Username : akakanomi
+Password : pemisah4lautan
+```
+Setelah didapatkan pasword selanjutnya masukan Username dan Password pada portal ```portal.ichimarumaru.tech``` maka akan muncul sebuah pertanyaan mengenai Urutan Konfigurasi Pengkabelan T568B sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/5c.png)
+
+
+Maka urutan dari kabel T568B adalah sebagai berikut :
+```
+Urutan ke 1 : Putih Orange RD+ (data terima+)
+Urutan ke 2 : Orange RD- (data terima-)
+Urutan ke 3 : Putih Hijau TD+ (data kirim +)
+Urutan ke 4 : Biru NC (tidak dipakai)
+Urutan ke 5 : Putih Biru NC (tidak dipakai)
+Urutan ke 6 : Hijau TD- (data kirim -)
+Urutan ke 7 : Putih Coklat NC (tidak dipakai)
+Urutan ke 8 : Coklat NC (tidak dipakai)
+```
+
 
 
 
