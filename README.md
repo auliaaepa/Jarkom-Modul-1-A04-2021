@@ -32,7 +32,7 @@
 
 
 ### Soal 5
-    5.Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+5.Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 ### Penjelasan
 
 
@@ -66,28 +66,28 @@
 ### Penjelasan
 
 
-## Soal 11
+### Soal 11
 11.Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80! 
 ### Penjelasan
 
 
 
-## Soal 12
+### Soal 12
 12.Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ### Penjelasan
 
 
-## Soal 13
+### Soal 13
 13.Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 ### Penjelasan
 
 
-## Soal 14
+### Soal 14
 14.Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 ### Penjelasan
 
 
-## Soal 15
+### Soal 15
 15.Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 ### Penjelasan
 
