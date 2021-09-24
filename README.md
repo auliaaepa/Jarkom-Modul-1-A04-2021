@@ -55,8 +55,8 @@
 
 
 
-## 9.Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
-### 1.Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
+## Soal 9
+### 9.Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 ### Penjelasan
 
 
