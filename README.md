@@ -22,6 +22,7 @@
 ### Soal 3
 3.Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 #### Penjelasan
+Untuk mengetahui username dan password untuk memasuki portal ``` basic.ichimaru.tech ``` maka memasukkan source code berikut ```http.authbasic && http.host == basic.ichimarumaru.tech``` pada filter wireshark sehingga akan di dapatkan tampilan sebagai berikut
 
 
 
