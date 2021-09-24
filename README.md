@@ -89,7 +89,9 @@ Urutan ke 8 : Coklat NC (tidak dipakai)
 ### Soal 6
 6.Cari username dan password ketika melakukan login ke FTP Server!
 #### Penjelasan
-
+Untuk mengetahui Username dan Password ketika melakukan login ke FTP Server maka masukan Command ```ftp.request.command == USER || ftp.request.command == PASS```
+pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/6a.png)
 
 
 ### Soal 7
@@ -118,6 +120,9 @@ Urutan ke 8 : Coklat NC (tidak dipakai)
 ### Soal 11
 11.Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80! 
 #### Penjelasan
+Untuk mengambil paket yang berasal dari port 80 maka masukan Command ```tcp.srcport==80```
+pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/11a.png)
 
 
 ### Soal 12
