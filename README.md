@@ -4,3 +4,8 @@
 ### Julietta Anastasia Rodiah Boru Panjaitan 05111940000033 
 ### Aulia Eka Putri Aryani				            05111940000044 
 ### Abdun Nafi’					                    05111940000066 
+
+***
+
+## Soal 1
+1.Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
