@@ -22,7 +22,26 @@
 ### Soal 3
 3.Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 #### Penjelasan
-Untuk mengetahui username dan password untuk memasuki portal ``` basic.ichimaru.tech ``` maka memasukkan source code berikut ```http.authbasic && http.host == basic.ichimarumaru.tech``` pada filter wireshark sehingga akan di dapatkan tampilan sebagai berikut
+Untuk mengetahui username dan password untuk memasuki portal ``` basic.ichimaru.tech ``` maka memasukkan source code berikut ```http.authbasic && http.host == basic.ichimarumaru.tech``` pada filter wireshark sehingga akan di dapatkan tampilan sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/3a.png)
+
+Setelah muncul tampilan wireshark filter selanjutnya klik > ```Hypertext Transfer Protocol``` > ```Authorization```. Maka pada credentials akan muncul sebagai berikut :
+dengan Username ```kuncimenujulautan``` dan Password ```tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN```. Setalah didapatkan pasword selanjutnya masukan username dan password 
+pada portal ```basic.ichimarumaru.tech``` maka akan tampil sebuah pertanyaan sebagai sebagai berikut :
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/3b.png)
+
+Dengan pertanyaaan mengenai Urutan Konfigurasi Pengkabelan T568A : 
+Maka urutan dari kabel T568A adalah sebagai berikut :
+```
+Urutan ke 1 : Putih Hijau TD+ (data kirim+)
+Urutan ke 2 : Hijau TD- (data kirim-)
+Urutan ke 3 : Putih Orange RD+ (data terima +)
+Urutan ke 4 : Biru NC (tidak dipakai)
+Urutan ke 5 : Putih Biru NC (tidak dipakai)
+Urutan ke 6 : Orange RD- (data terima -)
+Urutan ke 7 : Putih Coklat NC (tidak dipakai)
+Urutan ke 8 : Coklat NC (tidak dipakai)
+```
 
 
 
