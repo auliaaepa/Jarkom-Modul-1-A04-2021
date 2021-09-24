@@ -1,22 +1,23 @@
 # Jarkom-Modul-1-A04-2021
 
 ## Nama Anggota Kelompok 
-### Julietta Anastasia Rodiah Boru Panjaitan  05111940000033 
-### Aulia Eka Putri Aryani				            05111940000044 
-### Abdun Nafi’					                      05111940000066 
+### Julietta Anastasia Rodiah Boru Panjaitan (05111940000033)
+### Aulia Eka Putri Aryani (05111940000044)
+### Abdun Nafi’ (05111940000066)
 
 
 
 ### Soal 1
-   1.Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
-### Penjelasan
+1.Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
+#### Penjelasan
 
 
 
 ### Soal 2
-   2.Temukan paket dari web-web yang menggunakan basic authentication method! 
+2.Temukan paket dari web-web yang menggunakan _basic authentication method_! 
 #### Penjelasan
-
+Untuk menemukan paket dari web yang menggunakan _basic authentication method_, kami menggunakan display filter berupa `http.authbasic` pada wireshark, sehingga diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/2a.png)
 
 
 ### Soal 3
@@ -48,7 +49,8 @@ Urutan ke 8 : Coklat NC (tidak dipakai)
 ### Soal 4
 4.Temukan paket mysql yang mengandung perintah query select! 
 #### Penjelasan
-
+Untuk mencari paket mysql yang berisi perintah query select, kita dapat menggunakan display filter berupa `mysql.command==3 and frame matches "select"` pada wireshark, sehingga dapat diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/4a.png)
 
 
 ### Soal 5
@@ -101,20 +103,39 @@ pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
 
 
 ### Soal 8
-8.Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+8.Cari paket yang menunjukan pengunggahan file ke FTP tersebut!
 #### Penjelasan
-
+Untuk mencari paket yang menunjukan pengunggahan file ke FTP, maka kita dapat menuliskan `ftp.request.command==STOR` pada display filter wireshark, sehingga dapat diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/8.png)
 
 
 ### Soal 9
 9.Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 #### Penjelasan
-
+Untuk dapat menyimpan file yang berasal dari paket ftp, kita dapat menggunakan display filter `ftp-data.command contains "secret.zip"` pada wireshark, sehingga dapat diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/9a.png)
+Kemudian, `klik kanan` pada paket teratas, pilih `Follow`, pilih `TCP Stream`, ubah data menjadi `Raw`, dan `save as secret.zip`.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/9b.png)
+Berikut adalah tampilan dari secret.zip yang berhasil disimpan.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/9c.png)
 
 
 ### Soal 10
 10.Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 #### Penjelasan
+Untuk membuka file history.txt, kita dapat menuliskan `ftp-data.command contains "history.txt"` pada display filter wireshark, sehingga diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/10a.png)
+Kemudian, `klik kanan` pada paket teratas, pilih `Follow` dan pilih `TCP Stream`, sehingga diperoleh tampilan sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/10b.png)
+Berdasarkan gambar tersebut, password dari file rahasia di secret.zip berada pada file `bukanapaapa.txt`. Oleh karena itu, kita harus membuka file bukanapaapa.txt terlebih dahulu untuk menemukan password nya. 
+Untuk membuka file bukanapaapa.txt, kita dapat melakukan cara yang sama seperti file history.txt, yaitu dengan menuliskan `ftp-data.command contains "bukanapaapa.txt"` pada display filter wireshark, sehingga diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/10c.png)
+Kemudian, `klik kanan` pada paket teratas, pilih `Follow` dan pilih `TCP Stream`, sehingga diperoleh tampilan sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/10d.png)
+Berdasarkan gambar tersebut, password dari file rahasia di secret.zip adalah `d1b1langbukanapaapajugagapercaya`. Masukan password tersebut pada file rahasia yang ada di file secret.zip.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/10e.png)
+Berikut adalah tampilan dari file rahasia yang berhasil terbuka.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/10f.png)
 
 
 ### Soal 11
@@ -138,12 +159,18 @@ pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
 ### Soal 14
 14.Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 #### Penjelasan
-
+Untuk dapat melihat paket yang memiliki tujuan kemenag.go.id, pertama kita harus mencari `IP` dari kemenag.go.id terlebih dahulu. Untuk mencari IP, kita dapat menuliskan `ping kemenag.go.id` pada cmd.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/14a.png)
+Berdasarkan hasil ping, IP dari kemenag.go.id adalah `103.7.13.247`. Setelah memperoleh IP, kita dapat menggunakannya pada display filter wireshark dengan menuliskan `ip.dst==103.7.13.247`, sehingga diperoleh hasil sebagai berikut.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/14b.png)
 
 ### Soal 15
 15.Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 #### Penjelasan
-
+Untuk dapat melihat paket yang berasal dari IP kita, pertama kita harus mencari `IP` kita terlebih dahulu, dengan cara menuliskan `ipconfig` pada cmd.
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/15a.png)
+Berdasarkan hasil ipconfig, IP nya adalah `192.168.43.57`. Setelah mengetahui IP kita, kita dapat langsung menuliskan `ip.src==192.168.43.57` pada display filter wireshark , sehingga diperoleh hasil sebagai berikut. 
+![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/15b.png)
 
 
 
