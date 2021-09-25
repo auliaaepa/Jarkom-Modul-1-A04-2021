@@ -13,7 +13,7 @@
 Untuk mengetahui webserver apa yang digunakan pada `ichimarumaru.tech`, kami menggunakan display filter berupa `http.host == "ichimarumaru.tech"` pada wireshark, dan muncul tampilan seperti berikut.
 <img width="1440" alt="Screen Shot 2021-09-25 at 07 14 15" src="https://user-images.githubusercontent.com/74484044/134751144-00853ef9-7d93-4c99-98b1-0ca8c5efd81c.png">
 
-Setelah muncul tampilan tersebut, maka pilih salah satu, lalu klik kanan > ```Follow``` > ```TCP Stream``` seperti berikut ini.
+Setelah muncul tampilan tersebut, maka pilih salah satu dari hasil yang muncul, lalu klik kanan > ```Follow``` > ```TCP Stream``` seperti berikut ini.
 <img width="1440" alt="Screen Shot 2021-09-25 at 07 18 41" src="https://user-images.githubusercontent.com/74484044/134751311-74d387d6-8fa7-43c0-8a03-399b0fdcf89c.png">
 
 Lalu akan muncul tampilan berikut.
@@ -108,7 +108,23 @@ pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
 ### Soal 7
 7.Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 #### Penjelasan
+Langkah awal yang kita lakukan yakni dengan memasukkan code `ftp-data contains Real.pdf` pada display filter wireshark, dan akan muncul tampilan seperti berikut.
+<img width="1440" alt="Screen Shot 2021-09-25 at 08 49 33" src="https://user-images.githubusercontent.com/74484044/134753878-3f216a66-46b7-4028-b31f-f0f5dcffcaa1.png">
 
+Setelah itu pilih salah satu hasil, dan klik kanan > `Follow` > `TCP Stream` seperti berikut ini.
+<img width="1440" alt="Screen Shot 2021-09-25 at 08 52 17" src="https://user-images.githubusercontent.com/74484044/134753967-5a53dcbb-eb18-465e-8743-c247defa977f.png">
+
+Kemudian akan muncul tampilan seperti dibawah ini.
+<img width="1440" alt="Screen Shot 2021-09-25 at 08 59 00" src="https://user-images.githubusercontent.com/74484044/134754142-6fbe8c73-7f3e-4ad6-b2c5-2e6a7376d743.png">
+
+Lalu ubah tampilan dengan memilih raw pada `Show data as : Raw`. Dan tampilan akan berubah.
+<img width="1440" alt="Screen Shot 2021-09-25 at 09 01 45" src="https://user-images.githubusercontent.com/74484044/134754219-6e95a3c8-0dff-47fe-9287-364452985230.png">
+
+Setelah itu klik `Save as` dan beri nama file dengan `Real.pdf`, lalu klik `Save`.
+<img width="1440" alt="Screen Shot 2021-09-25 at 09 03 31" src="https://user-images.githubusercontent.com/74484044/134754249-5a3feec0-c8ab-460d-88ae-483ac6d7036f.png">
+
+Dan berikut isi dari file Real.pdf yang telah disimpan tadi.
+<img width="459" alt="Screen Shot 2021-09-25 at 09 07 14" src="https://user-images.githubusercontent.com/74484044/134754327-f4c3fcca-b930-4995-883e-de7ed6467fc5.png">
 
 
 ### Soal 8
