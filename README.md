@@ -10,7 +10,7 @@
 ### Soal 1
 1.Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 #### Penjelasan
-Untuk mengetahui webserver apa yang digunakan pada `ichimarumaru.tech`, kami menggunakan display filter berupa ```http.host == "ichimarumaru.tech"``` pada wireshark, dan memunculkan tampilan seperti berikut.
+Untuk mengetahui webserver apa yang digunakan pada `ichimarumaru.tech`, kami menggunakan display filter berupa `http.host == "ichimarumaru.tech"` pada wireshark, dan muncul tampilan seperti berikut.
 <img width="1440" alt="Screen Shot 2021-09-25 at 07 14 15" src="https://user-images.githubusercontent.com/74484044/134751144-00853ef9-7d93-4c99-98b1-0ca8c5efd81c.png">
 
 Setelah muncul tampilan tersebut, maka pilih salah satu, lalu klik kanan > ```Follow``` > ```TCP Stream``` seperti berikut ini.
