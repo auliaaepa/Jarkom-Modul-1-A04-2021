@@ -175,7 +175,7 @@ pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
 ### Soal 12
 12.Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 #### Penjelasan
-Untuk mengambil paket yang mengandung port 21, maka kita bisa menuliskan code `tcp.port==21`, dan akan muncul hasil seperti berikut ini.
+Untuk mengambil paket yang mengandung port 21, maka kita bisa menuliskan code `tcp.port==21`, dan akan muncul hasil seperti berikut.
 <img width="1440" alt="Screen Shot 2021-09-25 at 09 29 12" src="https://user-images.githubusercontent.com/74484044/134754881-455d375b-c6cd-4c72-97d2-f89c9a06a48a.png">
 
 
