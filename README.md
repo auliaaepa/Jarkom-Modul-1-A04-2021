@@ -123,7 +123,7 @@ Lalu ubah tampilan dengan memilih raw pada `Show data as : Raw`. Dan tampilan ak
 Setelah itu klik `Save as` dan beri nama file dengan `Real.pdf`, lalu klik `Save`.
 <img width="1440" alt="Screen Shot 2021-09-25 at 09 03 31" src="https://user-images.githubusercontent.com/74484044/134754249-5a3feec0-c8ab-460d-88ae-483ac6d7036f.png">
 
-Dan berikut isi dari file Real.pdf yang telah disimpan tadi.
+Dan berikut isi dari file `Real.pdf` yang telah disimpan tadi.
 
 <img width="459" alt="Screen Shot 2021-09-25 at 09 07 14" src="https://user-images.githubusercontent.com/74484044/134754327-f4c3fcca-b930-4995-883e-de7ed6467fc5.png">
 
@@ -175,11 +175,15 @@ pada filter wireshark maka akan di dadapatkan hasil sebagai berikut :
 ### Soal 12
 12.Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 #### Penjelasan
+Untuk mengambil paket yang mengandung port 21, maka kita bisa menuliskan code `tcp.port==21`, dan akan muncul hasil seperti berikut ini.
+<img width="1440" alt="Screen Shot 2021-09-25 at 09 29 12" src="https://user-images.githubusercontent.com/74484044/134754881-455d375b-c6cd-4c72-97d2-f89c9a06a48a.png">
 
 
 ### Soal 13
 13.Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 #### Penjelasan
+Untuk memfilter sehingga wireshark hanya menampilkan paket yang menuju port 443, maka kita bisa menuliskan code `tcp.dstport==443`, lalu akan muncul hasil seperti berikut ini.
+<img width="1440" alt="Screen Shot 2021-09-25 at 09 30 43" src="https://user-images.githubusercontent.com/74484044/134754915-337a8c21-6daf-4f4b-bf44-31b20042db32.png">
 
 
 ### Soal 14
@@ -197,12 +201,3 @@ Untuk dapat melihat paket yang berasal dari IP kita, pertama kita harus mencari 
 ![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/15a.png)
 Berdasarkan hasil ipconfig, IP nya adalah `192.168.43.57`. Setelah mengetahui IP kita, kita dapat langsung menuliskan `ip.src==192.168.43.57` pada display filter wireshark , sehingga diperoleh hasil sebagai berikut. 
 ![image](https://github.com/auliaaepa/Jarkom-Modul-1-A04-2021/blob/master/img/15b.png)
-
-
-
-
-
-
-
-
-
