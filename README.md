@@ -19,7 +19,7 @@ Setelah muncul tampilan tersebut, maka pilih salah satu, lalu klik kanan > ```Fo
 Lalu akan muncul tampilan berikut.
 <img width="1440" alt="Screen Shot 2021-09-25 at 07 17 24" src="https://user-images.githubusercontent.com/74484044/134751275-4f5cfcdd-c9ef-4cfd-bb79-86f9fd0d33a1.png">
 
-Dapat dilihat server yang tertera pada tampilan tersebut yakni, ```Server: nginx/1.18.0 (Ubuntu)```.
+Dapat dilihat server yang tertera pada tampilan tersebut yakni, ```Server: nginx/1.18.0 (Ubuntu)```, dan itulah webserver yang digunakan pada `ichimarumaru.tech`.
 
 
 ### Soal 2
