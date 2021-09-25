@@ -124,6 +124,7 @@ Setelah itu klik `Save as` dan beri nama file dengan `Real.pdf`, lalu klik `Save
 <img width="1440" alt="Screen Shot 2021-09-25 at 09 03 31" src="https://user-images.githubusercontent.com/74484044/134754249-5a3feec0-c8ab-460d-88ae-483ac6d7036f.png">
 
 Dan berikut isi dari file Real.pdf yang telah disimpan tadi.
+
 <img width="459" alt="Screen Shot 2021-09-25 at 09 07 14" src="https://user-images.githubusercontent.com/74484044/134754327-f4c3fcca-b930-4995-883e-de7ed6467fc5.png">
 
 
